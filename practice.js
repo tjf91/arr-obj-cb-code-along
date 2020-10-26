@@ -240,15 +240,11 @@ function checkAge(age) {
 // Rewrite the existing if statement as a ternary.
 
 function schoolStatus(status) {
-  var parentsMessage
-
   // if (status == 'Good') {
-  //   parentsMessage = 'Wow, great job kiddo!'
+  //   return 'Wow, great job kiddo!'
   // } else {
-  //   parentsMessage = 'No more video games!'
+  //   return 'No more video games!'
   // }
-
-  return parentsMessage
 }
 
 //////////////////PROBLEM 22////////////////////
