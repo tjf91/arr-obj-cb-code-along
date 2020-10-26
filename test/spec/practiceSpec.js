@@ -139,11 +139,11 @@ describe('JavaScript2 Code Along', function () {
       expect(typeof isOldEnough).toBe('function')
     })
     it('Returns correct answer', function () {
-      let result = isOldEnough(16)
+      let result = isOldEnough({ age: 16 })
       expect(result).toBe(false)
     })
     it('Returns correct answer', function () {
-      let result = isOldEnough(26)
+      let result = isOldEnough({ age: 26 })
       expect(result).toBe(true)
     })
   })
@@ -163,7 +163,7 @@ describe('JavaScript2 Code Along', function () {
       expect(schoolStatus('Good')).toBe('Wow, great job kiddo!')
     })
     it('Should return correct value', () => {
-      expect(schoolStatus('Bad')).toBe('No more video games')
+      expect(schoolStatus('Bad')).toBe('No more video games!')
     })
   })
   describe('Problem 22 - messageBasedOnAge', function () {
@@ -186,7 +186,7 @@ describe('JavaScript2 Code Along', function () {
     })
 
     it('Correctly invokes inner function', () => {
-      expect(outerFn()).toBe('The innerFn is a callback!')
+      expect(outerFn(innerFn)).toBe('The innerFn is a callback!')
     })
   })
   describe('Problem 24 - callbacks 2', function () {
