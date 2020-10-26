@@ -33,7 +33,9 @@ describe('JavaScript2 Code Along', function () {
   })
   describe('Problem 6 - remove first item from array', function () {
     const arr = [1, 2, 3]
-    expect(removeFirst(arr)).toEqual([2, 3])
+    it('removes correct item', () => {
+      expect(removeFirst(arr)).toEqual([2, 3])
+    })
   })
   describe('Problem 7 - push 1 - 25 to the given array', function () {
     const arr = [...Array(26).keys()]
@@ -100,11 +102,11 @@ describe('JavaScript2 Code Along', function () {
     })
   })
   describe('Problem 16 - assign property to variable', function () {
-    it('name variable exists', function () {
-      expect(name).toBeDefined()
+    it('userFirstName variable exists', function () {
+      expect(userFirstName).toBeDefined()
     })
-    it('name variable has correct value', function () {
-      expect(name).toBe('sally')
+    it('userFirstName variable has correct value', function () {
+      expect(userFirstName).toBe('sally')
     })
   })
   describe('Problem 17 - update user', function () {
