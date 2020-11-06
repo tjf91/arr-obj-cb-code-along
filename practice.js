@@ -193,7 +193,9 @@ const userFirstName = person.firstName
 // };
 
 function updateUser(user) {
-  // Code Here
+  user.name="Ryan"
+  user.pwHash="superSafe"
+  user.username='ryan2020'
 }
 
 //////////////////PROBLEM 18////////////////////
@@ -201,7 +203,8 @@ function updateUser(user) {
 //Inside the function updateEmail, update the email property of the passed in object to be the value of the parameter str. Return the updated object.
 
 function updateEmail(obj, str) {
-  // Code here
+  obj.email=str
+  
 }
 
 //////////////////PROBLEM 19////////////////////
@@ -209,13 +212,22 @@ function updateEmail(obj, str) {
 // Write a function called isOldEnough that takes a person obj and checks the age property to see if the person is old enough to enter the club.  If they are 21 or older return true else return false.
 
 // Code here
+function isOldEnough (person){
+  if(person.age>21){
+    return true
+  }
+  return false
 
+
+}
 //////////////////PROBLEM 20////////////////////
 
 //Create a function called addRole that takes in a user object as the first parameter and a string as the second parameter.  The string will represent the user's new role in the system (i.e. admin, creator, editor, visitor). Create a new property on the user object called "role" and assign the passed in string to it, then return the updated object.
 
 // Code here
-
+function addRole(user,str){
+  user.role=str
+}
 ///////////////////////////////////////////////////////
 
 /*
@@ -252,6 +264,8 @@ function schoolStatus(status) {
   // } else {
   //   return 'No more video games!'
   // }
+      return status == 'Good'? "Wow, great job kiddo!":"No more video games!"
+      
 }
 
 //////////////////PROBLEM 22////////////////////
